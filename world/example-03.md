@@ -1,5 +1,6 @@
 ### Example-03  - 场景绘制及场景控制
 
+原项目示例地址：https://threejs.org/examples/#misc_exporter_ply
 
 #### 场景布置 - Scene
 
@@ -60,3 +61,4 @@ function onWindowResize() {
     renderer.setSize( window.innerWidth, window.innerHeight );
 }
 ```
+
