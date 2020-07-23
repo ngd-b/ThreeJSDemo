@@ -5,6 +5,12 @@
 
 `three.js`[GitHub地址](https://github.com/mrdoob/three.js/tree/master),所有使用到的库都是从上面cp下来放到本地的。你也可以选择CDN
 
+文件目录说明：
+
+`/js/` threeJS核心库以及代码示例中用到的扩展库。
+`/static` 示例代码中用到的静态资源，比如图片、模型。
+`/views` 示例代码，命名为`example-**.html`格式，对应每个说明文档`example-**.md`
+`/word/` 示例代码的文档说明。
 
 操作说明：
 
