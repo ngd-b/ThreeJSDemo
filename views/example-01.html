@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Demo</title>
+    <style>
+        body,html{
+            margin:0;
+            padding:0;
+        }
+        canvas{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <script src="../js/threeJS.js"></script>
+</body>
+<script>
+    window.onload=function(){
+        // 页面加载完成后初始化
+        // 场景初始化
+        let scene = new THREE.Scene();
+        let camera = new THREE.PerspectiveCamera(45,window.innerHeight/window.innerWidth,1,1000);
+        camera.position.z = 5;
+
+        // 进行绘制 - 正方形
+        let geometry = new THREE.BoxGeometry();
+        let mertial = new THREE.MeshBasicMaterial({color:0x00ff00});
+        let cube = new THREE.Mesh(geometry,mertial);
+        scene.add(cube);
+
+        // 渲染器
+        let render = new THREE.WebGLRenderer();
+        render.setSize(window.innerWidth,window.innerHeight);
+        document.body.appendChild(render.domElement);
+        // render.render(scene,camera);
+
+        function animate(){
+            requestAnimationFrame(animate);
+            // 使物体旋转
+            cube.rotation.x+=0.01;
+            cube.rotation.y+=0.01;
+            
+            render.render(scene,camera);
+        }
+        animate();
+    }
+</script>
+</html>
