@@ -28,4 +28,4 @@
     ```
 效果:
 
-<img src="/static/images/example-01.gif" width="500" />
+<img src="https://github.com/ngd-b/ThreeJSDemo/blob/master/static/images/example-01.gif" width="500" />

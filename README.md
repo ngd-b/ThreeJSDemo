@@ -14,9 +14,9 @@
 
 ### 基本使用
 
-#### Example-01 - [绘制了一个旋转的立方体](/world/example-01.md)
-#### Example-02 - [加载自定义模型](/world/example-02.md)
-#### Example-02 - [场景渲染及场景控制](/world/example-03.md)
+#### Example-01 - [绘制了一个旋转的立方体](https://github.com/ngd-b/ThreeJSDemo/blob/master/world/example-01.md)
+#### Example-02 - [加载自定义模型](https://github.com/ngd-b/ThreeJSDemo/blob/master/world/example-02.md)
+#### Example-02 - [场景渲染及场景控制](https://github.com/ngd-b/ThreeJSDemo/blob/master/world/example-03.md)
 
 ### API释义
 
