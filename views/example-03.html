@@ -21,7 +21,7 @@
 </body>
 <script>
     window.onload=function(){
-        var scene, camera, renderer, exporter, mesh;
+        var scene, camera, renderer, exporter, mesh , controls;
 
 			init();
 			animate();
@@ -81,9 +81,9 @@
 				document.body.appendChild( renderer.domElement );
 
 				// 控制器
-				var controls = new OrbitControls( camera, renderer.domElement );
+				controls = new OrbitControls( camera, renderer.domElement );
 				controls.target.set( 0, 25, 0 );
-				controls.update();
+				
 
 				// 窗口适应
 				window.addEventListener( 'resize', onWindowResize, false );
@@ -102,6 +102,7 @@
 			function animate() {
 
 				requestAnimationFrame( animate );
+				// controls.update();
 				renderer.render( scene, camera );
 
 			}

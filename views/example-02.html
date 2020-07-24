@@ -48,9 +48,10 @@
         // 绘制 - 自定义建模
         let loader = new GLTFLoader();
         loader.load('../static/test.glb',function(gltf){
-            gltf.scene.position.set(0,0,-5);
+            let model = gltf.scene;
+            model.position.set(0,0,-5);
 
-            scene.add(gltf.scene);
+            scene.add(model);
         },undefined,function(err){
             console.error(err);
         });
